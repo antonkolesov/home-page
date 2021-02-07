@@ -1,0 +1,43 @@
+$font-path: "static/font/material/material";
+@font-face {
+  font-family: "IconFont";
+  font-style: normal;
+  font-weight: normal;
+  src: url("#{$font-path}.ttf") format("truetype"),
+       url("#{$font-path}.eot") format("embedded-opentype"),
+       url("#{$font-path}.woff2") format("woff2"),
+       url("#{$font-path}.woff") format("woff");
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+input,
+button,
+textarea,
+select,
+option,
+optgroup {
+  color: #303030;
+  font: normal 13px/1.0 Helvetica, Arial, Verdana, sans-serif;
+}
+
+body {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.root {
+  height: 100%;
+  width: 100%;
+}

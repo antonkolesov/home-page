@@ -1,0 +1,20 @@
+.app-card {
+  background: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.133) 0px 3.2px 7.2px 0px, rgba(0, 0, 0, 0.11) 0px 0.6px 1.8px 0px;
+  color: #303030;
+  cursor: pointer;
+  margin: 10px;
+  padding: 20px;
+  text-decoration: none;
+  user-select: none;
+  width: 200px;
+
+  &:hover {
+    background: #fefefe;
+  }
+
+  &:active {
+    background: #fcfcfc;
+  }
+}

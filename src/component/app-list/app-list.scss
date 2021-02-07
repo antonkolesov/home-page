@@ -1,0 +1,23 @@
+.app-list {
+  align-items: center;
+  background: #f3f2f1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.app-list__loading-overlay {
+  animation: appear 100ms 500ms backwards;
+  opacity: 1;
+}

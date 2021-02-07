@@ -1,0 +1,39 @@
+@mixin iconSize($size) {
+  font-size: $size;
+  width: $size;
+  height: $size;
+  line-height: $size;
+}
+
+.icon {
+  display: inline-block;
+  color: #606060;
+
+  &:before {
+    @include iconSize(24px);
+    display: block;
+    font: normal 24px/1.0 IconFont;
+  }
+}
+
+.icon--name {
+  &-loading:before {content: "\F771"}
+}
+
+.icon--size {
+  @each $i, $j in (
+    small: 18px,
+    medium: 24px,
+    large: 36px,
+  ) {
+    &-#{$i}:before {
+      @include iconSize($j);
+    }
+  }
+
+  @for $i from 2 through 10 {
+    &-#{$i}x:before {
+      @include iconSize(24 * $i + px);
+    }
+  }
+}
